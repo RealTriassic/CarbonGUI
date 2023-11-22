@@ -1,0 +1,49 @@
+metadata.format.version = "1.1"
+
+[versions]
+
+# Compile Only dependencies
+velocity = "3.2.0-SNAPSHOT"
+paper = "1.19.4-R0.1-SNAPSHOT"
+
+carbon = "daRXTcdU" # 2.1.0-beta.23
+slf4j = "2.0.9"
+gson = "2.10.1"
+
+adventure-api = "4.14.0"
+
+# Dependencies
+configurate = "4.1.2"
+papertrail = "0.0.1-SNAPSHOT"
+fastboard = "2.0.1"
+
+# Gradle Plugins
+shadow = "8.1.1"
+pluginyml = "0.6.0"
+blossom = "2.1.0"
+
+[libraries]
+
+# Compile Only Dependencies
+velocity = { group = "com.velocitypowered", name = "velocity-api", version.ref = "velocity" }
+paper-api = { group = "io.papermc.paper", name = "paper-api", version.ref = "paper" }
+
+carbon = { group = "maven.modrinth", name = "carbon", version.ref = "carbon" }
+slf4j = { group = "org.slf4j", name = "slf4j-api", version.ref = "slf4j" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+
+adventure-api = { group = "net.kyori", name = "adventure-api", version.ref = "adventure-api" }
+adventure-minimessage = { group = "net.kyori", name = "adventure-text-minimessage", version.ref = "adventure-api" }
+
+# Dependencies
+configurate-hocon = { group = "org.spongepowered", name = "configurate-hocon", version.ref = "configurate" }
+papertrail = { group = "io.papermc", name = "paper-trail", version.ref = "papertrail" }
+fastboard = { group = "fr.mrmicky", name = "fastboard", version.ref = "fastboard" }
+
+[plugins]
+
+# Gradle Plugins
+shadow = { id = "com.github.johnrengelman.shadow", version.ref = "shadow" }
+pluginyml-paper = { id = "net.minecrell.plugin-yml.paper", version.ref = "pluginyml" }
+pluginyml-bukkit = { id = "net.minecrell.plugin-yml.bukkit", version.ref = "pluginyml" }
+blossom = { id = "net.kyori.blossom", version.ref = "blossom" }
